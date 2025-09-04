@@ -37,7 +37,7 @@
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
         };
@@ -54,7 +54,7 @@
 &kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 INT4  &kp SPACE  &lt 2 INT5     &kp BACKSPACE  &lt 4 ENTER                             &kp F13
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         num {
@@ -120,7 +120,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
           >;
         
-          sensor-bindings = <&scroll_up_down>;
+          sensor-bindings = <&inc_dec_kp LCMD(MINUS) LCMD(EQUAL)>;
         };
     };
 };
