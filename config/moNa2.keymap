@@ -72,10 +72,10 @@
 
         arrow {
             bindings = <
-&kp ESCAPE      &kp LS(TAB)             &kp UP_ARROW    &kp TAB                  &trans                     &kp LG(LC(LEFT))  &kp LC(LG(C))  &kp LG(LC(RIGHT))  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END            &trans  &trans            &kp LG(LC(F))  &trans             &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans            &trans         &trans             &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                                                      &trans
+&kp ESCAPE        &kp LS(TAB)             &kp UP_ARROW      &kp TAB                  &trans                           &kp LG(LC(LEFT))  &kp LC(LG(C))  &kp LG(LC(RIGHT))  &trans  &trans
+&kp LC(LEFT)      &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp LC(RIGHT)            &trans  &trans            &kp LG(LC(F))  &trans             &trans  &trans
+&kp LEFT_CONTROL  &kp LG(LS(LEFT_ARROW))  &trans            &kp LG(LS(RIGHT_ARROW))  &trans         &trans    &trans  &trans            &trans         &trans             &trans  &trans
+&kp LEFT_SHIFT    &kp LEFT_ALT            &kp LEFT_COMMAND  &trans                   &trans         &trans    &trans  &trans                                                      &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
