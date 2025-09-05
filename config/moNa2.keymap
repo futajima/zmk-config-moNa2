@@ -38,7 +38,6 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
             tap-ms = <20>;
         };
     };
@@ -50,8 +49,8 @@
             bindings = <
 &kp Q               &kp W         &lt 5 E       &kp R     &lt 6 T                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A               &kp S         &kp D         &kp F     &kp G                     &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp COLON
-&mt LEFT_CONTROL Z  &kp X         &kp C         &kp V     &kp B      &lt 4 COLON    &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
-&kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &kp INT4  &kp SPACE  &kp INT5       &kp BACKSPACE  &lt 4 ENTER                             &kp F13
+&mt LEFT_CTRL Z     &kp X         &kp C         &kp V     &kp B      &lt 4 COLON    &kp AT_SIGN    &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
+&kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &kp INT4  &kp SPACE  &kp INT5     &kp BACKSPACE  &lt 4 ENTER                             &kp F13
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -120,6 +119,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
+            // レイヤー6：エンコーダーで ⌘- / ⌘=（段階ズーム）
             sensor-bindings = <&inc_dec_kp LCMD(MINUS) LCMD(EQUAL)>;
         };
     };
