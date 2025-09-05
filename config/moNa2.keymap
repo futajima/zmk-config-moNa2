@@ -54,7 +54,9 @@
 &kp LEFT_SHIFT      &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 INT4  &kp SPACE  &lt 2 INT5     &kp BACKSPACE  &lt 4 ENTER                             &kp F13
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         num {
