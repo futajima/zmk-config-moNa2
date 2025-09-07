@@ -60,20 +60,29 @@
         };
 
         num {
-    bindings = <
+  bindings = <
 /* 1段目: - 7 8 9 + & 「 」 ( ) */
-&kp MINUS            &kp KP_NUMBER_7   &kp KP_NUMBER_8   &kp KP_NUMBER_9   &kp LS(SEMICOLON)  &kp LS(N6)  &kp LS(RBKT)     &kp LS(LBKT)     &kp LS(N8)     &kp LS(N9)
+&kp MINUS            &kp KP_NUMBER_7     &kp KP_NUMBER_8     &kp KP_NUMBER_9
+&kp KP_PLUS          &kp LS(N6)          &kp LA(RBKT)        &kp LA(LBKT)
+&kp LS(N8)           &kp LS(N9)
+
 /* 2段目: / 4 5 6 * ~ # ! ? ; % */
-&kp SLASH            &kp KP_NUMBER_4   &kp KP_NUMBER_5   &kp KP_NUMBER_6   &kp LS(COLON)      &kp LS(CARET)  &kp LS(N3)     &kp LS(N1)       &kp LS(SLASH)  &kp SEMICOLON  &kp LS(N5)
+&kp KP_DIVIDE        &kp KP_NUMBER_4     &kp KP_NUMBER_5     &kp KP_NUMBER_6
+&kp KP_MULTIPLY      &kp LS(CARET)       &kp LS(N3)          &kp LS(N1)
+&kp LS(SLASH)        &kp SEMICOLON       &kp LS(N5)
+
 /* 3段目: 0 1 2 3 . = _ [ ] { } \ */
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL  &kp LS(MINUS)  &kp RBKT  &kp RIGHT_BRACKET  &kp LS(RBKT)  &kp LS(RIGHT_BRACKET)  &kp BACKSLASH
-/* 4段目: （変えない／右端に | ） */
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&kp PERIOD          &kp KP_EQUAL         &kp LS(MINUS)
+&kp RBKT            &kp RIGHT_BRACKET    &kp LS(RBKT)        &kp LS(RIGHT_BRACKET)
+&kp BACKSLASH
+
+/* 4段目（右端に |）*/
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE
-    >;
+  >;
 
-    sensor-bindings = <&scroll_up_down>;
+  sensor-bindings = <&scroll_up_down>;
 };
-
         arrow {
             bindings = <
 &kp ESCAPE        &kp LS(TAB)             &kp UP_ARROW      &kp TAB                  &kp LC(UP)                       &kp LG(LC(LEFT))  &kp LC(LG(C))  &kp LG(LC(RIGHT))  &trans  &trans
