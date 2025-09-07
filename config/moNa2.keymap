@@ -60,15 +60,19 @@
         };
 
         num {
-            bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                   &kp AMPERSAND     &kp LS(LBKT)       &kp LS(RIGHT_BRACKET)  &kp LS(N9)       &kp LS(N0)
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK               &kp TILDE       &kp HASH          &kp EXCLAMATION    &kp QUESTION           &kp SEMICOLON    &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL    &kp UNDERSCORE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans       &trans          &trans                                                                       &kp PIPE
-            >;
+    bindings = <
+/* 1段目: - 7 8 9 + & 「 」 ( ) */
+&kp MINUS            &kp KP_NUMBER_7   &kp KP_NUMBER_8   &kp KP_NUMBER_9   &kp LS(SEMICOLON)  &kp LS(N6)  &kp LS(RBKT)     &kp LS(LBKT)     &kp LS(N8)     &kp LS(N9)
+/* 2段目: / 4 5 6 * ~ # ! ? ; % */
+&kp SLASH            &kp KP_NUMBER_4   &kp KP_NUMBER_5   &kp KP_NUMBER_6   &kp LS(COLON)      &kp LS(CARET)  &kp LS(N3)     &kp LS(N1)       &kp LS(SLASH)  &kp SEMICOLON  &kp LS(N5)
+/* 3段目: 0 1 2 3 . = _ [ ] { } \ */
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp EQUAL  &kp LS(MINUS)  &kp RBKT  &kp RIGHT_BRACKET  &kp LS(RBKT)  &kp LS(RIGHT_BRACKET)  &kp BACKSLASH
+/* 4段目: （変えない／右端に | ） */
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE
+    >;
 
-            sensor-bindings = <&scroll_up_down>;
-        };
+    sensor-bindings = <&scroll_up_down>;
+};
 
         arrow {
             bindings = <
