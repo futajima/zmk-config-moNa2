@@ -48,10 +48,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &lt 5 E           &kp R        &mt LEFT_COMMAND T                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F        &kp G                                   &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp INTERNATIONAL_1
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V        &lt 4 B             &lt 6 LBKT          &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 1 LANG2  &kp SPACE           &lt 2 LANGUAGE_1    &kp BACKSPACE  &lt 4 ENTER                             &kp F13
+&kp Q             &kp W         &lt 5 E           &kp R        &kp T                                         &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F        &kp G                          &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp INTERNATIONAL_1
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V        &lt 4 B    &lt 6 LBKT          &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &lt 3 SLASH
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 1 LANG2  &kp SPACE  &lt 2 LANGUAGE_1    &kp BACKSPACE  &lt 4 ENTER                             &kp F13
             >;
 
             sensor-bindings =
@@ -105,10 +105,10 @@
 
         MOUSE {
             bindings = <
-&trans            &trans        &trans            &kp LG(C)  &kp LG(LS(N4))                    &trans  &trans    &trans    &trans    &trans
-&trans            &trans        &trans            &mkp MB1   &mkp MB2                  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&kp LEFT_SHIFT    &trans        &trans            &trans     &trans          &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &kp SPACE       &trans    &trans  &trans                                &trans
+&trans            &trans        &trans            &kp LG(V)  &kp LG(C)                               &trans  &trans    &trans    &trans    &trans
+&trans            &mkp MB2      &mkp MB3          &mkp MB1   &kp LS(LG(NUMBER_4))            &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&kp LEFT_SHIFT    &trans        &trans            &trans     &trans                &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &kp SPACE             &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
