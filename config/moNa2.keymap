@@ -105,16 +105,16 @@
 
         MOUSE {
             bindings = <
-&trans            &kp LG(Z)     &trans            &kp LG(C)  &kp LG(V)                         &trans  &trans    &trans    &trans    &trans
-&trans            &mkp MB2      &mkp MB3          &mkp MB1   &kp LG(LS(V))             &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&kp LEFT_SHIFT    &trans        &trans            &trans     &kp LG(LS(N4))  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &kp SPACE       &trans    &trans  &trans                                &trans
+&trans            &kp LG(Z)     &trans            &kp LG(C)  &kp LG(V)                             &trans  &trans    &trans    &trans    &trans
+&trans            &mkp MB2      &mkp MB3          &mkp MB1   &kp LG(LS(V))                 &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&kp LEFT_SHIFT    &trans        &trans            &trans     &kp LG(LS(LC(N4)))  &trans    &trans  &trans  &trans    &trans    &trans    &trans
+&kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans     &kp SPACE           &trans    &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LG(Z) LS(LG(Z))>;
         };
 
-        SCROLL {
+        SCROLL_and_figma {
             bindings = <
 &trans  &kp LA(H)  &kp LA(W)  &kp LA(V)  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(A)  &kp LA(S)  &kp LA(D)  &trans            &trans  &trans  &trans  &trans  &trans  &trans
